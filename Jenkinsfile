@@ -1,20 +1,20 @@
 pipeline {
     agent any
-
-    stages {
-        stage('Build') {
+    stages{
+        stage('Build'){
             steps {
-                echo 'Building..'
+                'clean package'
+            }
+            post {
+                success {
+                    echo 'Now Archiving...'
+                    archiveArtifacts artifacts: '**/target/*.war'
+                }
             }
         }
-        stage('Test') {
+        stage ('Deploy to Staging'){
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                build job: 'Deploy-to-staging'
             }
         }
     }
