@@ -23,8 +23,8 @@ stages{
             }
         }
 				stage ('Deploy to Prod'){
-            steps {
-                build job: 'Deploy-to-Prod'
+		            steps {
+		                build job: 'Deploy-to-Prod'
             }
         }
     }
