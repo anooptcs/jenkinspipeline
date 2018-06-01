@@ -210,7 +210,7 @@
     <connection>scm:git@github.com:anoopupadhyay/jenkinspipeline.git</connection>
     <developerConnection>scm:git@github.com:anoopupadhyay/jenkinspipeline.git</developerConnection>
     <tag>HEAD</tag>
-    <url>http://github.com/jleetutorial/maven-project</url>
+    <url>https://github.com/anoopupadhyay/maven-project</url>
   </scm>
 
   <prerequisites>
