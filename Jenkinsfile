@@ -17,6 +17,14 @@ stages{
                 }
             }
         }
+		
+		stage ('static analysis'){
+			
+			steps {
+			build: 'static analysis'
+			}
+		
+		}
 		stage ('Deploy to Staging'){
             
             steps {
