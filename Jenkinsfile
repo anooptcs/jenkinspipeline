@@ -18,14 +18,19 @@ stages{
             }
         }
 		stage ('Deploy to Staging'){
+            
             steps {
+                
                 build job: 'Deploy-to-staging'
             }
         }
 				stage ('Deploy to Prod'){
+		           
 		            steps {
+		            
 		                build job: 'Deploy-to-Prod'
             }
         }
     }
-}
+ }
+   
