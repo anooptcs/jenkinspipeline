@@ -1,5 +1,3 @@
-node('master') {
-
 	pipeline {
 		agent any
 		stages{
@@ -21,4 +19,4 @@ node('master') {
 	
 	}
   
-}
+
