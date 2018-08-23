@@ -1,6 +1,6 @@
 node('master') {
 
-	pipe;ine {
+	pipeline {
 		agent any
 		stages{
 			stage('Build'){
