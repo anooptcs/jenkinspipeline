@@ -1,6 +1,4 @@
-
 pipeline {
-	node('master') {
 	agent any
 	stages{
 		stage('Build'){
@@ -14,11 +12,6 @@ pipeline {
 					}
 				}
 			}
-		stage('Deploye to stageing'){
-			steps {
-				build job:'Deploy-to-staging'
-			}
-		}
+		
 	}
-}
 }
