@@ -6,7 +6,6 @@ pipeline {
 				def mvnHome = tool name: 'maven-3.5.4', type: 'maven'
 				def mvnCMD = "${mvnHome}/bin/mvn"
 				sh "${mvnCMD} clean package"
-				
 			}
 			post {
 				success {
